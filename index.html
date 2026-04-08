@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stackly - IT Solutions & Technology Services</title>
+  <meta name="description" content="Stackly provides cutting-edge IT solutions, software development, cloud services, and cybersecurity for businesses worldwide.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%23a3e635' rx='15' width='100' height='100'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-size='50' font-weight='bold' fill='%230a0e27'>S</text></svg>">
+</head>
+<body>
+  <!-- Page Loader -->
+  <div class="page-loader">
+    <div class="loader"></div>
+  </div>
+  
+  <!-- Particle Background -->
+  <div class="particles"></div>
+  
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">
+      <img src="images/logo_green.webp" alt="Stackly Logo" class="logo-img">
+      <span class="logo-text">Stackly</span>
+      </a>
+      
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="pages/about.html">About Us</a></li>
+        <li>
+          <a href="pages/services.html">Services </a>
+          
+        </li>
+        <li><a href="pages/blog.html">Blog</a></li>
+        <li><a href="pages/contact.html">Contact</a></li>
+      </ul>
+      
+      <div class="nav-actions">
+        <a href="pages/login.html" class="btn btn-primary">Login <i class="fas fa-arrow-right"></i></a>
+        <button class="mobile-menu-btn" aria-label="Open Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- Mobile Menu -->
+  <div class="mobile-menu-overlay"></div>
+  <div class="mobile-menu">
+    <button class="mobile-menu-close" aria-label="Close Menu">
+      <i class="fas fa-times"></i>
+    </button>
+    <nav class="mobile-nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="pages/about.html">About Us</a>
+      <a href="pages/services.html">Services</a>
+      
+      <a href="pages/blog.html">Blog</a>
+      <a href="pages/contact.html">Contact</a>
+      
+    </nav>
+  </div>
+  
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-bg">
+      <canvas id="hero-canvas"></canvas>
+    </div>
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <i class="fas fa-rocket"></i>
+            <span>Stackly Technology & IT Solutions</span>
+          </div>
+          <h1 class="hero-title">
+            Empowering Your <span>Digital Journey</span> With Stackly
+          </h1>
+          <p class="hero-description">
+            Transform your business with our cutting-edge technology solutions. We deliver innovative software, cloud infrastructure, and cybersecurity services tailored to your needs.
+          </p>
+          <div class="hero-tags">
+            <span class="tag active">Software Development</span>
+            <span class="tag">Cloud Solution</span>
+            <span class="tag active">IT Solution</span>
+            <span class="tag">Data Analytics</span>
+            <span class="tag">Technology</span>
+            <span class="tag">Cyber Security</span>
+            <span class="tag">Consulting Services</span>
+          </div>
+          <div class="hero-buttons">
+            <a href="pages/services.html" class="btn btn-primary">Explore Services <i class="fas fa-arrow-right"></i></a>
+            <a href="pages/about.html" class="btn btn-secondary">Learn More</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="images/hero-image.webp" alt="Digital Technology Solutions">
+          <div class="floating-badge top-left">
+            <span>SUCCESS BRAND WITH</span>
+            <span class="arrow"><i class="fas fa-arrow-up"></i></span>
+            <span>GETTING INNOVATION</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-images reveal-left">
+          <div class="about-main-image">
+            <img src="images/about-main.webp" alt="Our Team at Work">
+          </div>
+          <div class="about-small-image top">
+            <img src="images/about-small-1.webp" alt="Developer Working">
+          </div>
+          <div class="about-small-image bottom">
+            <img src="images/about-small-2.webp" alt="Team Meeting">
+          </div>
+          <div class="experience-badge">
+            <div class="number counter" data-target="25">0</div>
+            <div class="text">Years Of<br>Experience</div>
+          </div>
+        </div>
+        <div class="about-content reveal-right">
+          <p class="section-subtitle">Our Service</p>
+          <h2>Empower Your Business With Our Comprehensive IT Solutions</h2>
+          <p>Welcome to Stackly, your premier destination for cutting-edge technology solutions and IT services. At Stackly, we are passionate about harnessing the power of technology to empower businesses worldwide.</p>
+          <p>Our team of expert developers, consultants, and security specialists work together to deliver solutions that drive growth and innovation for your organization.</p>
+          
+          <div class="progress-bars">
+            <div class="progress-item">
+              <div class="progress-header">
+                <span>IT Consulting</span>
+                <span class="percent">100%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-fill" data-target="100"></div>
+              </div>
+            </div>
+            <div class="progress-item">
+              <div class="progress-header">
+                <span>Cyber Security</span>
+                <span class="percent">98%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-fill" data-target="98"></div>
+              </div>
+            </div>
+          </div>
+          
+          <a href="pages/about.html" class="btn btn-primary">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Services Section -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-subtitle">Our Services</p>
+        <h2 class="section-title">Solutions We Provide</h2>
+        <p class="section-description">We offer a comprehensive range of IT services designed to help your business thrive in the digital age.</p>
+      </div>
+      
+      <div class="services-grid">
+        <div class="service-card reveal stagger-1">
+          <div class="service-icon">
+            <i class="fas fa-code"></i>
+          </div>
+          <h3>Software Development</h3>
+          <p>Custom software solutions tailored to your business needs. From web applications to enterprise systems, we build it all.</p>
+          <a href="pages/services.html#software" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+        
+        <div class="service-card reveal stagger-2">
+          <div class="service-icon">
+            <i class="fas fa-cloud"></i>
+          </div>
+          <h3>Cloud Solutions</h3>
+          <p>Scalable cloud infrastructure and migration services. Optimize your operations with AWS, Azure, and Google Cloud.</p>
+          <a href="pages/services.html#cloud" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+        
+        <div class="service-card reveal stagger-3">
+          <div class="service-icon">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <h3>Cyber Security</h3>
+          <p>Protect your digital assets with our comprehensive security solutions. From threat detection to compliance management.</p>
+          <a href="pages/services.html#security" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+        
+        <div class="service-card reveal stagger-4">
+          <div class="service-icon">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <h3>Data Analytics</h3>
+          <p>Transform your data into actionable insights. Our analytics solutions help you make informed business decisions.</p>
+          <a href="pages/services.html#analytics" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+        
+        <div class="service-card reveal stagger-5">
+          <div class="service-icon">
+            <i class="fas fa-users-cog"></i>
+          </div>
+          <h3>IT Consulting</h3>
+          <p>Strategic technology consulting to help you navigate digital transformation and achieve your business goals.</p>
+          <a href="pages/services.html#consulting" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+        
+        <div class="service-card reveal stagger-6">
+          <div class="service-icon">
+            <i class="fas fa-mobile-alt"></i>
+          </div>
+          <h3>Mobile Development</h3>
+          <p>Native and cross-platform mobile applications that deliver exceptional user experiences on iOS and Android.</p>
+          <a href="pages/services.html#mobile" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Pricing Section -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-subtitle">Pricing Plans</p>
+        <h2 class="section-title">Choose Your Perfect Plan</h2>
+        <p class="section-description">Flexible pricing options designed to fit businesses of all sizes. Scale as you grow.</p>
+      </div>
+      
+      <div class="pricing-grid">
+        <div class="pricing-card reveal stagger-1">
+          <h3 class="pricing-name">Starter</h3>
+          <div class="pricing-price">$99<span>/month</span></div>
+          <ul class="pricing-features">
+            <li><i class="fas fa-check"></i> Basic IT Support</li>
+            <li><i class="fas fa-check"></i> Cloud Storage 100GB</li>
+            <li><i class="fas fa-check"></i> Email Support</li>
+            <li><i class="fas fa-check"></i> Monthly Reports</li>
+            <li><i class="fas fa-check"></i> 5 User Accounts</li>
+          </ul>
+          <a href="pages/contact.html" class="btn btn-outline">Get Started</a>
+        </div>
+        
+        <div class="pricing-card featured reveal stagger-2">
+          <div class="pricing-badge">Most Popular</div>
+          <h3 class="pricing-name">Professional</h3>
+          <div class="pricing-price">$299<span>/month</span></div>
+          <ul class="pricing-features">
+            <li><i class="fas fa-check"></i> Priority IT Support</li>
+            <li><i class="fas fa-check"></i> Cloud Storage 500GB</li>
+            <li><i class="fas fa-check"></i> 24/7 Phone Support</li>
+            <li><i class="fas fa-check"></i> Weekly Reports</li>
+            <li><i class="fas fa-check"></i> 25 User Accounts</li>
+            <li><i class="fas fa-check"></i> Security Monitoring</li>
+          </ul>
+          <a href="pages/contact.html" class="btn btn-outline">Get Started</a>
+        </div>
+        
+        <div class="pricing-card reveal stagger-3">
+          <h3 class="pricing-name">Enterprise</h3>
+          <div class="pricing-price">$799<span>/month</span></div>
+          <ul class="pricing-features">
+            <li><i class="fas fa-check"></i> Dedicated Support Team</li>
+            <li><i class="fas fa-check"></i> Unlimited Cloud Storage</li>
+            <li><i class="fas fa-check"></i> 24/7 Priority Support</li>
+            <li><i class="fas fa-check"></i> Real-time Dashboard</li>
+            <li><i class="fas fa-check"></i> Unlimited Users</li>
+            <li><i class="fas fa-check"></i> Custom Development</li>
+          </ul>
+          <a href="pages/contact.html" class="btn btn-outline">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- FAQ Section -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <div class="faq-grid">
+        <div class="faq-image reveal-left">
+          <img src="images/faq-image.webp" alt="Customer Support">
+        </div>
+        <div class="faq-content reveal-right">
+          <p class="section-subtitle">FAQ</p>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <p class="section-description mb-4">Find answers to common questions about our services and solutions.</p>
+          
+          <div class="faq-list">
+            <div class="faq-item active">
+              <button class="faq-question">
+                What IT services does Stackly offer?
+                <i class="fas fa-chevron-down"></i>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-content">
+                  Stackly offers a comprehensive range of IT services including software development, cloud solutions, cybersecurity, data analytics, IT consulting, and mobile app development. We tailor our solutions to meet your specific business needs.
+                </div>
+              </div>
+            </div>
+            
+            <div class="faq-item">
+              <button class="faq-question">
+                How long does a typical project take?
+                <i class="fas fa-chevron-down"></i>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-content">
+                  Project timelines vary based on complexity and scope. A simple website might take 2-4 weeks, while enterprise software development can take 3-6 months. We provide detailed timelines during our initial consultation.
+                </div>
+              </div>
+            </div>
+            
+            <div class="faq-item">
+              <button class="faq-question">
+                Do you provide ongoing support after project completion?
+                <i class="fas fa-chevron-down"></i>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-content">
+                  Yes! We offer comprehensive maintenance and support packages. Our team is available 24/7 for critical issues, and we provide regular updates, security patches, and performance optimizations.
+                </div>
+              </div>
+            </div>
+            
+            <div class="faq-item">
+              <button class="faq-question">
+                What industries do you specialize in?
+                <i class="fas fa-chevron-down"></i>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-content">
+                  We have expertise across multiple industries including healthcare, finance, e-commerce, manufacturing, and education. Our diverse experience allows us to bring best practices from various sectors to your project.
+                </div>
+              </div>
+            </div>
+            
+            <div class="faq-item">
+              <button class="faq-question">
+                How do you ensure data security?
+                <i class="fas fa-chevron-down"></i>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-content">
+                  Security is our top priority. We implement industry-standard encryption, follow OWASP guidelines, conduct regular security audits, and ensure compliance with GDPR, HIPAA, and other relevant regulations.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Blog Section -->
+  <section class="blog" id="blog">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-subtitle">Our Blog</p>
+        <h2 class="section-title">Latest Insights & News</h2>
+        <p class="section-description">Stay updated with the latest trends, technologies, and insights from our experts.</p>
+      </div>
+      
+      <div class="blog-grid">
+        <article class="blog-card reveal stagger-1">
+          <div class="blog-image">
+            <img src="images/blog-1.webp" alt="Cloud Computing">
+            <span class="blog-category">Cloud</span>
+          </div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span><i class="fas fa-calendar"></i> Jan 15, 2026</span>
+              <span><i class="fas fa-user"></i> Admin</span>
+            </div>
+            <h3><a href="pages/blog.html">The Future of Cloud Computing: Trends to Watch in 2026</a></h3>
+            <p>Explore the emerging trends shaping the cloud computing landscape and how businesses can leverage them...</p>
+            <a href="pages/blog.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+        
+        <article class="blog-card reveal stagger-2">
+          <div class="blog-image">
+            <img src="images/blog-2.webp" alt="Cybersecurity">
+            <span class="blog-category">Security</span>
+          </div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span><i class="fas fa-calendar"></i> Jan 10, 2026</span>
+              <span><i class="fas fa-user"></i> Admin</span>
+            </div>
+            <h3><a href="pages/blog.html">Essential Cybersecurity Practices for Small Businesses</a></h3>
+            <p>Learn how to protect your business from cyber threats with these essential security practices...</p>
+            <a href="pages/blog.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+        
+        <article class="blog-card reveal stagger-3">
+          <div class="blog-image">
+            <img src="images/blog-3.webp" alt="Data Analytics">
+            <span class="blog-category">Analytics</span>
+          </div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span><i class="fas fa-calendar"></i> Jan 5, 2026</span>
+              <span><i class="fas fa-user"></i> Admin</span>
+            </div>
+            <h3><a href="pages/blog.html">Leveraging Data Analytics for Business Growth</a></h3>
+            <p>Discover how data-driven decision making can transform your business operations and drive growth...</p>
+            <a href="pages/blog.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-brand">
+       <a href="index.html" class="logo">
+       <img src="images/logo_green.webp" alt="Stackly Logo" class="logo-img">
+       <span class="logo-text">Stackly</span>
+       </a>
+  <p>Your trusted IT solutions partner.</p>
+</div>
+          <p>Empowering businesses with innovative IT solutions. We transform your digital vision into reality with cutting-edge technology and expert services.</p>
+          <div class="footer-social">
+            <a href="pages/404.html" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="pages/404.html" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="pages/404.html" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="pages/404.html" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+            <li><a href="pages/about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+            <li><a href="pages/services.html"><i class="fas fa-chevron-right"></i> Services</a></li>
+            <li><a href="pages/blog.html"><i class="fas fa-chevron-right"></i> Blog</a></li>
+            <li><a href="pages/contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="pages/services.html#software"><i class="fas fa-chevron-right"></i> Software Development</a></li>
+            <li><a href="pages/services.html#cloud"><i class="fas fa-chevron-right"></i> Cloud Solutions</a></li>
+            <li><a href="pages/services.html#security"><i class="fas fa-chevron-right"></i> Cyber Security</a></li>
+            <li><a href="pages/services.html#consulting"><i class="fas fa-chevron-right"></i> IT Consulting</a></li>
+            <li><a href="pages/services.html#analytics"><i class="fas fa-chevron-right"></i> Data Analytics</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Contact Info</h4>
+          <ul class="footer-contact">
+            <li><i class="fas fa-map-marker-alt"></i> 123 Tech Street, Silicon Valley, CA 94025</li>
+            <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+            <li><i class="fas fa-envelope"></i> info@stackly.com</li>
+            <li><i class="fas fa-clock"></i> Mon - Fri: 9:00 AM - 6:00 PM</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 Stackly. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="pages/404.html">Privacy Policy</a>
+          <a href="pages/404.html">Terms of Service</a>
+          <a href="pages/404.html">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Scroll to Top Button -->
+  <button class="scroll-top" aria-label="Scroll to Top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+  
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>

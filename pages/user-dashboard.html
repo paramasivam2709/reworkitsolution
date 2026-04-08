@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Dashboard - Stackly IT Solutions</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/pages.css">
+  
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%23a3e635' rx='15' width='100' height='100'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-size='50' font-weight='bold' fill='%230a0e27'>S</text></svg>">
+</head>
+<body>
+  <div class="page-loader">
+    <div class="loader"></div>
+  </div>
+  
+  <div class="dashboard">
+    <!-- Sidebar -->
+    <aside class="dashboard-sidebar">
+      <div class="sidebar-header">
+        <a href="../index.html" class="logo">
+      <img src="../images/logo_green.webp" alt="Stackly Logo" class="logo-img">
+      <span class="logo-text">Stackly</span>
+      </a>
+      </div>
+      
+      <div class="sidebar-user">
+        <div class="user-avatar">JD</div>
+        <div class="user-info">
+          <h4>John Doe</h4>
+          <p>john@example.com</p>
+        </div>
+      </div>
+      
+      <nav class="sidebar-nav">
+        <p class="sidebar-nav-title">Main Menu</p>
+        <a href="user-dashboard.html" class="active">
+          <i class="fas fa-home"></i>
+          <span>Dashboard</span>
+        </a>
+        <a href="404.html">
+          <i class="fas fa-project-diagram"></i>
+          <span>My Projects</span>
+        </a>
+        <a href="404.html">
+          <i class="fas fa-ticket-alt"></i>
+          <span>Support Tickets</span>
+        </a>
+        <a href="404.html">
+          <i class="fas fa-file-invoice"></i>
+          <span>Invoices</span>
+        </a>
+        
+        <p class="sidebar-nav-title">Account</p>
+        <a href="404.html">
+          <i class="fas fa-user"></i>
+          <span>Profile</span>
+        </a>
+        <a href="404.html">
+          <i class="fas fa-cog"></i>
+          <span>Settings</span>
+        </a>
+        <a href="404.html">
+          <i class="fas fa-bell"></i>
+          <span>Notifications</span>
+          <span class="badge" style="margin-left: auto; background: #ef4444; color: white; padding: 2px 8px; border-radius: 10px; font-size: 0.7rem;">3</span>
+        </a>
+      </nav>
+      
+      <div class="sidebar-footer">
+        <a href="../index.html">
+          <i class="fas fa-sign-out-alt"></i>
+          <span>Logout</span>
+        </a>
+      </div>
+    </aside>
+    
+    <!-- Main Content -->
+    <main class="dashboard-main">
+      <!-- Header -->
+      <header class="dashboard-header">
+        <button class="sidebar-toggle" onclick="document.querySelector('.dashboard-sidebar').classList.toggle('active')">
+          <i class="fas fa-bars"></i>
+        </button>
+        
+        <div class="header-search">
+          <i class="fas fa-search"></i>
+          <input type="text" placeholder="Search...">
+        </div>
+        
+        <div class="header-actions">
+          <a href="404.html"<button class="header-btn">
+            <i class="fas fa-bell"></i>
+            <span class="badge">3</span>
+          </button></a>
+          <a href="404.html">
+            <button class="header-btn">
+              <i class="fas fa-envelope"></i>
+              <span class="badge">5</span>
+            </button>
+          </a>
+          <a href="404.html">
+            <button class="header-btn">
+              <i class="fas fa-cog"></i>
+            </button>
+          </a>
+        </div>
+      </header>
+      
+      <!-- Content -->
+      <div class="dashboard-content">
+        <h1 class="dashboard-title">Dashboard Overview</h1>
+        
+        <!-- Stats Cards -->
+        <div class="dashboard-stats">
+          <div class="stat-card reveal stagger-1">
+            <div class="stat-card-icon blue">
+              <i class="fas fa-project-diagram"></i>
+            </div>
+            <div class="stat-card-content">
+              <h4>Active Projects</h4>
+              <p>5</p>
+              <span>+2 this month</span>
+            </div>
+          </div>
+          
+          <div class="stat-card reveal stagger-2">
+            <div class="stat-card-icon green">
+              <i class="fas fa-check-circle"></i>
+            </div>
+            <div class="stat-card-content">
+              <h4>Completed</h4>
+              <p>12</p>
+              <span>+3 this month</span>
+            </div>
+          </div>
+          
+          <div class="stat-card reveal stagger-3">
+            <div class="stat-card-icon purple">
+              <i class="fas fa-ticket-alt"></i>
+            </div>
+            <div class="stat-card-content">
+              <h4>Support Tickets</h4>
+              <p>3</p>
+              <span>2 resolved</span>
+            </div>
+          </div>
+          
+          <div class="stat-card reveal stagger-4">
+            <div class="stat-card-icon orange">
+              <i class="fas fa-dollar-sign"></i>
+            </div>
+            <div class="stat-card-content">
+              <h4>Total Spent</h4>
+              <p>$24,500</p>
+              <span>This year</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Dashboard Grid -->
+        <div class="dashboard-grid">
+          <!-- Projects Table -->
+          <div class="dashboard-card reveal">
+            <div class="dashboard-card-header">
+              <h3>Recent Projects</h3>
+              <a href="404.html" class="view-all">View All</a>
+            </div>
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Project Name</th>
+                  <th>Status</th>
+                  <th>Progress</th>
+                  <th>Due Date</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>E-Commerce Platform</td>
+                  <td><span class="status-badge active">In Progress</span></td>
+                  <td>75%</td>
+                  <td>Mar 30, 2026</td>
+                </tr>
+                <tr>
+                  <td>Mobile App Development</td>
+                  <td><span class="status-badge pending">Pending</span></td>
+                  <td>30%</td>
+                  <td>Apr 15, 2026</td>
+                </tr>
+                <tr>
+                  <td>Cloud Migration</td>
+                  <td><span class="status-badge completed">Completed</span></td>
+                  <td>100%</td>
+                  <td>Jan 20, 2026</td>
+                </tr>
+                <tr>
+                  <td>Security Audit</td>
+                  <td><span class="status-badge active">In Progress</span></td>
+                  <td>60%</td>
+                  <td>Feb 28, 2026</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          
+          <!-- Activity Feed -->
+          <div class="dashboard-card reveal">
+            <div class="dashboard-card-header">
+              <h3>Recent Activity</h3>
+              <a href="404.html" class="view-all">View All</a>
+            </div>
+            <div class="activity-list">
+              <div class="activity-item">
+                <div class="activity-icon success">
+                  <i class="fas fa-check"></i>
+                </div>
+                <div class="activity-content">
+                  <p>Project "Cloud Migration" completed</p>
+                  <span>2 hours ago</span>
+                </div>
+              </div>
+              <div class="activity-item">
+                <div class="activity-icon info">
+                  <i class="fas fa-comment"></i>
+                </div>
+                <div class="activity-content">
+                  <p>New comment on E-Commerce Platform</p>
+                  <span>5 hours ago</span>
+                </div>
+              </div>
+              <div class="activity-item">
+                <div class="activity-icon warning">
+                  <i class="fas fa-exclamation"></i>
+                </div>
+                <div class="activity-content">
+                  <p>Support ticket #1234 updated</p>
+                  <span>1 day ago</span>
+                </div>
+              </div>
+              <div class="activity-item">
+                <div class="activity-icon success">
+                  <i class="fas fa-file-invoice"></i>
+                </div>
+                <div class="activity-content">
+                  <p>Invoice #INV-2026-001 paid</p>
+                  <span>2 days ago</span>
+                </div>
+              </div>
+              <div class="activity-item">
+                <div class="activity-icon info">
+                  <i class="fas fa-plus"></i>
+                </div>
+                <div class="activity-content">
+                  <p>New project "Mobile App" created</p>
+                  <span>3 days ago</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Support Tickets -->
+        <div class="dashboard-card reveal" style="margin-top: 25px;">
+          <div class="dashboard-card-header">
+            <h3>Support Tickets</h3>
+            <a href="404.html" class="view-all">View All</a>
+          </div>
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Ticket ID</th>
+                <th>Subject</th>
+                <th>Priority</th>
+                <th>Status</th>
+                <th>Created</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>#1234</td>
+                <td>API Integration Issue</td>
+                <td><span class="status-badge pending">High</span></td>
+                <td><span class="status-badge active">Open</span></td>
+                <td>Jan 10, 2026</td>
+              </tr>
+              <tr>
+                <td>#1233</td>
+                <td>Login Problem</td>
+                <td><span class="status-badge completed">Low</span></td>
+                <td><span class="status-badge completed">Resolved</span></td>
+                <td>Jan 8, 2026</td>
+              </tr>
+              <tr>
+                <td>#1232</td>
+                <td>Feature Request</td>
+                <td><span class="status-badge completed">Medium</span></td>
+                <td><span class="status-badge active">In Progress</span></td>
+                <td>Jan 5, 2026</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+  </div>
+  
+  <script src="../js/main.js"></script>
+</body>
+</html>
